@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h51-28-jXB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1862" y="-158"/>
+        </scene>
+        <!--Search Repos-->
+        <scene sceneID="4NF-xM-qyO">
+            <objects>
+                <viewController id="aAn-W2-vex" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ye7-Bn-BoB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Knj-6P-RVI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vYI-hb-nJe">
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAm-QO-Pw0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Knj-6P-RVI" firstAttribute="leading" secondItem="bAm-QO-Pw0" secondAttribute="leading" id="Fd6-tc-cdC"/>
+                            <constraint firstItem="Knj-6P-RVI" firstAttribute="top" secondItem="bAm-QO-Pw0" secondAttribute="top" id="Rfd-ZV-BPC"/>
+                            <constraint firstItem="vYI-hb-nJe" firstAttribute="leading" secondItem="bAm-QO-Pw0" secondAttribute="leading" id="WxT-9t-Osf"/>
+                            <constraint firstItem="bAm-QO-Pw0" firstAttribute="trailing" secondItem="vYI-hb-nJe" secondAttribute="trailing" id="X2R-wU-cjG"/>
+                            <constraint firstItem="vYI-hb-nJe" firstAttribute="top" secondItem="Knj-6P-RVI" secondAttribute="bottom" id="Xio-uX-bmc"/>
+                            <constraint firstItem="bAm-QO-Pw0" firstAttribute="bottom" secondItem="vYI-hb-nJe" secondAttribute="bottom" id="hsX-yS-vxV"/>
+                            <constraint firstItem="Knj-6P-RVI" firstAttribute="trailing" secondItem="bAm-QO-Pw0" secondAttribute="trailing" id="iD4-I9-iiL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search Repos" id="asG-Nw-IWJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bb0-0m-Gvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="450"/>
+        </scene>
+        <!--Consult Repos-->
+        <scene sceneID="wZa-wK-BKj">
+            <objects>
+                <viewController id="Flj-7v-s3K" customClass="ViewController" customModule="Consult_Repos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AVE-Zf-cUU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0yd-RU-PSD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z8j-Q2-PN3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z8j-Q2-PN3" firstAttribute="trailing" secondItem="0yd-RU-PSD" secondAttribute="trailing" id="BoY-oE-2Yd"/>
+                            <constraint firstItem="0yd-RU-PSD" firstAttribute="top" secondItem="z8j-Q2-PN3" secondAttribute="top" id="LsR-6X-tJF"/>
+                            <constraint firstItem="z8j-Q2-PN3" firstAttribute="bottom" secondItem="0yd-RU-PSD" secondAttribute="bottom" id="aWk-lp-xPr"/>
+                            <constraint firstItem="0yd-RU-PSD" firstAttribute="leading" secondItem="z8j-Q2-PN3" secondAttribute="leading" id="kL3-fx-dbV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Consult Repos" id="lzv-fX-665"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jK6-sQ-Cv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="-158"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="foG-ZV-hDW">
+            <objects>
+                <tabBarController id="h51-28-jXB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j56-J0-v5R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Flj-7v-s3K" kind="relationship" relationship="viewControllers" id="Kzz-g1-iYr"/>
+                        <segue destination="aAn-W2-vex" kind="relationship" relationship="viewControllers" id="Gyo-uR-ZlR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxj-IZ-qFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="145"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
