@@ -20,7 +20,7 @@ class ConsultViewController: UIViewController {
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
         self.retriveRepos()
-
+        
     }
     
     func retriveRepos(){
@@ -50,6 +50,18 @@ extension ConsultViewController: UITableViewDataSource {
         }
         cell.configure(with: self.repos[indexPath.row])
         return cell
+    }
+}
+
+extension ConsultViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        destination.repos = [self.repos[indexPath.row]]
+        self.navigationController?.pushViewController(destination, animated: true)
+        
     }
 }
 
