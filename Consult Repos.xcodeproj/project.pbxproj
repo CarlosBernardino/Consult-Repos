@@ -20,6 +20,9 @@
 		2D3E255A278F8A4400138D9D /* ReposOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E2559278F8A4400138D9D /* ReposOutput.swift */; };
 		2D3E255E278FB4A800138D9D /* ConsultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3E255D278FB4A800138D9D /* ConsultCell.xib */; };
 		2D3E2560278FB5DB00138D9D /* ConsultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E255F278FB5DB00138D9D /* ConsultCell.swift */; };
+		2D3E2563279025E100138D9D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E2562279025E100138D9D /* DetailsViewController.swift */; };
+		2D3E256627906D5D00138D9D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E256527906D5D00138D9D /* SearchViewController.swift */; };
+		2D3E256E279075CA00138D9D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E256D279075CA00138D9D /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		2D3E2559278F8A4400138D9D /* ReposOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposOutput.swift; sourceTree = "<group>"; };
 		2D3E255D278FB4A800138D9D /* ConsultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultCell.xib; sourceTree = "<group>"; };
 		2D3E255F278FB5DB00138D9D /* ConsultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultCell.swift; sourceTree = "<group>"; };
+		2D3E2562279025E100138D9D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		2D3E256527906D5D00138D9D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2D3E256D279075CA00138D9D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		2D3E2523278F848400138D9D /* Consult Repos */ = {
 			isa = PBXGroup;
 			children = (
+				2D3E256C279075BE00138D9D /* Common */,
 				2D3E255C278FB47D00138D9D /* View Controllers */,
 				2D3E2555278F89A000138D9D /* Network */,
 				2D3E2558278F8A1800138D9D /* Models */,
@@ -166,9 +173,35 @@
 		2D3E255C278FB47D00138D9D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D3E256427906D4800138D9D /* Search */,
+				2D3E2561279025C200138D9D /* Details */,
 				2D3E255B278FB46000138D9D /* Consult */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2D3E2561279025C200138D9D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				2D3E2562279025E100138D9D /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		2D3E256427906D4800138D9D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2D3E256527906D5D00138D9D /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2D3E256C279075BE00138D9D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2D3E256D279075CA00138D9D /* Utils.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +338,11 @@
 			files = (
 				2D3E2529278F848400138D9D /* ConsultViewController.swift in Sources */,
 				2D3E2525278F848400138D9D /* AppDelegate.swift in Sources */,
+				2D3E256E279075CA00138D9D /* Utils.swift in Sources */,
+				2D3E256627906D5D00138D9D /* SearchViewController.swift in Sources */,
 				2D3E255A278F8A4400138D9D /* ReposOutput.swift in Sources */,
 				2D3E2557278F89D100138D9D /* NetworkCalls.swift in Sources */,
+				2D3E2563279025E100138D9D /* DetailsViewController.swift in Sources */,
 				2D3E2560278FB5DB00138D9D /* ConsultCell.swift in Sources */,
 				2D3E2527278F848400138D9D /* SceneDelegate.swift in Sources */,
 			);
