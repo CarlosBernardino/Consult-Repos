@@ -62,7 +62,7 @@
         <!--Consult Repos-->
         <scene sceneID="wZa-wK-BKj">
             <objects>
-                <viewController id="Flj-7v-s3K" customClass="ViewController" customModule="Consult_Repos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Flj-7v-s3K" customClass="ConsultViewController" customModule="Consult_Repos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVE-Zf-cUU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +82,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Consult Repos" id="lzv-fX-665"/>
+                    <connections>
+                        <outlet property="tableView" destination="0yd-RU-PSD" id="Zz0-PT-Q4l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jK6-sQ-Cv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
