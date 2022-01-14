@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConsultGridCell" id="QWh-0N-sBF" customClass="ConsultGridCell" customModule="Consult_Repos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tHB-Ln-5va">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Vax-3m-Wah">
+                        <rect key="frame" x="46" y="0.0" width="100" height="100"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xf5-HO-EAe">
+                        <rect key="frame" x="10" y="108" width="172" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Xf5-HO-EAe" secondAttribute="trailing" constant="10" id="BuW-OJ-bXw"/>
+                    <constraint firstItem="Xf5-HO-EAe" firstAttribute="top" secondItem="Vax-3m-Wah" secondAttribute="bottom" constant="8" id="VxY-cP-bXk"/>
+                    <constraint firstItem="Xf5-HO-EAe" firstAttribute="leading" secondItem="tHB-Ln-5va" secondAttribute="leading" constant="10" id="hE0-VN-z6B"/>
+                    <constraint firstItem="Xf5-HO-EAe" firstAttribute="top" secondItem="Vax-3m-Wah" secondAttribute="bottom" constant="8" id="l0p-0e-cmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Xf5-HO-EAe" secondAttribute="bottom" id="l9f-St-CeG"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="192" height="144"/>
+            <connections>
+                <outlet property="nameLabel" destination="Xf5-HO-EAe" id="Ngf-Bu-4rd"/>
+                <outlet property="repoImageView" destination="Vax-3m-Wah" id="XcM-gq-0wh"/>
+            </connections>
+            <point key="canvasLocation" x="234.78260869565219" y="115.17857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

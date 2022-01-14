@@ -26,6 +26,8 @@
 		2D3E25702790F5C500138D9D /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E256F2790F5C500138D9D /* SearchCell.swift */; };
 		2D3E25722790F5D300138D9D /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3E25712790F5D300138D9D /* SearchCell.xib */; };
 		2D80ABAC27910439002F6A48 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80ABAB27910439002F6A48 /* Singleton.swift */; };
+		2D80ABAE279117AD002F6A48 /* ConsultGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D80ABAD279117AD002F6A48 /* ConsultGridCell.xib */; };
+		2D80ABB0279117BC002F6A48 /* ConsultGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80ABAF279117BC002F6A48 /* ConsultGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		2D3E256F2790F5C500138D9D /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		2D3E25712790F5D300138D9D /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		2D80ABAB27910439002F6A48 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		2D80ABAD279117AD002F6A48 /* ConsultGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultGridCell.xib; sourceTree = "<group>"; };
+		2D80ABAF279117BC002F6A48 /* ConsultGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 				2D3E2528278F848400138D9D /* ConsultViewController.swift */,
 				2D3E255F278FB5DB00138D9D /* ConsultCell.swift */,
 				2D3E255D278FB4A800138D9D /* ConsultCell.xib */,
+				2D80ABAF279117BC002F6A48 /* ConsultGridCell.swift */,
+				2D80ABAD279117AD002F6A48 /* ConsultGridCell.xib */,
 			);
 			path = Consult;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				2D3E255E278FB4A800138D9D /* ConsultCell.xib in Resources */,
 				2D3E2531278F848500138D9D /* LaunchScreen.storyboard in Resources */,
 				2D3E252E278F848500138D9D /* Assets.xcassets in Resources */,
+				2D80ABAE279117AD002F6A48 /* ConsultGridCell.xib in Resources */,
 				2D3E252C278F848400138D9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 				2D3E256E279075CA00138D9D /* Utils.swift in Sources */,
 				2D3E256627906D5D00138D9D /* SearchViewController.swift in Sources */,
 				2D3E255A278F8A4400138D9D /* ReposOutput.swift in Sources */,
+				2D80ABB0279117BC002F6A48 /* ConsultGridCell.swift in Sources */,
 				2D80ABAC27910439002F6A48 /* Singleton.swift in Sources */,
 				2D3E2557278F89D100138D9D /* NetworkCalls.swift in Sources */,
 				2D3E2563279025E100138D9D /* DetailsViewController.swift in Sources */,
