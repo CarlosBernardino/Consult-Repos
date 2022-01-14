@@ -8,8 +8,12 @@
 import UIKit
 
 final class ConsultCell: UITableViewCell {
+    //MARK: - Declarations
+    
     @IBOutlet weak var repoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    //MARK: - Cell Config
     
     func configure(with repos: Repos) {
         let url = URL(string: repos.owner.repoImageURL)!

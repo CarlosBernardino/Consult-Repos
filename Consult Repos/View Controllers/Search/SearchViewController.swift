@@ -8,6 +8,8 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    //MARK: - Declarations
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -15,6 +17,8 @@ class SearchViewController: UIViewController {
     private var repos = [Repos]()
     private var filteredRepos = [Repos]()
     private let singleton = Singleton.sharedInstance
+    
+    //MARK: - Life Cycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,8 @@ class SearchViewController: UIViewController {
     }
     
 }
+
+//MARK: - TableView DataSources & Delegates
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,17 +49,16 @@ extension SearchViewController: UITableViewDataSource {
     }
 }
 
+//MARK: - SearchBar Delegates
+
 extension SearchViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // searchText will contain user input
-        // in allData I have kept all data of the table
-        // filteredData used to get the filtered result
+
         if (searchText == ""){
             self.filteredRepos = self.repos
         }
         else{
             self.filteredRepos = []
-            // you can do any kind of filtering here based on user input
             self.filteredRepos = self.repos.filter{
                 $0.name.lowercased().contains(searchText.lowercased())
             }
@@ -63,8 +68,6 @@ extension SearchViewController: UISearchBarDelegate{
                 self.present(alert, animated: true, completion: nil)
             }
         }
-        // lastly you need to update tableView using filteredData so that the filtered rows are only shown
-        //As you use SVGdata for tableView, after filtering you have to put all filtered data into SVGdata before reloading the table.
         self.tableView.reloadData()
     }
 }

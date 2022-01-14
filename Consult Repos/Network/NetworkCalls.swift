@@ -8,8 +8,11 @@
 import Foundation
 
 class NetworkCalls {
+    //MARK: - Declarations
     
     var repos: [Repos] = []
+    
+    //MARK: - API Calls
     
     func getRepos(completion: @escaping (Result<[Repos],Error>) -> Void){
         guard let url = URL(string: "https://api.github.com/users/google/repos") else {
