@@ -30,7 +30,7 @@ class DetailsViewController: UIViewController {
             let url = URL(string: objectRepo.owner.repoImageURL)!
             repoImageView?.loadImage(url: url)
             repoNameLabel?.text = objectRepo.name
-            repoDescriptionLabel?.text = objectRepo.description
+            repoDescriptionLabel?.text = objectRepo.description ?? "No Description available!"
         }
     }
 }
