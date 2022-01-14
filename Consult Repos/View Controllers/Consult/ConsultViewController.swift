@@ -12,12 +12,14 @@ class ConsultViewController: UIViewController {
     
     private let cellIdentifier = "ConsultCell"
     private var repos =  [Repos]()
+    let singleton = Singleton.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        
         
         self.retriveRepos()
         
@@ -29,6 +31,7 @@ class ConsultViewController: UIViewController {
                 case .success(let repos):
                     DispatchQueue.main.async{
                         self.repos = repos
+                        self.singleton.repos = repos
                         self.tableView.reloadData()
                     }
                 case .failure(let error):
